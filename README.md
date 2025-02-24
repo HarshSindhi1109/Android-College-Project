@@ -12,8 +12,8 @@ A simple and efficient **Music Player App** for Android that allows users to pla
 - 🔄 **Auto-play Next Song on Completion**
 
 ## 📱 Screenshots
-![Home Screen](screenshots/home_screen.png)
-![Now Playing](screenshots/play_screen.png)
+![Home Screen](Screenshots/home_screen.png)
+![Now Playing](Screenshots/play_screen.png)
 >
 
 ## ⚙️ Tech Stack
