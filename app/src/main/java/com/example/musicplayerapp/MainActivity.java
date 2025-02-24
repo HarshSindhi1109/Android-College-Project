@@ -129,10 +129,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String songName = (String) listView.getItemAtPosition(position);
-                startActivity(new Intent(getApplicationContext(), PlayerActivity.class).putExtra("songs", mySongs)
+                ArrayList<String> songPaths = new ArrayList<>();
+                for (File song : mySongs) {
+                    songPaths.add(song.getAbsolutePath()); // Convert File objects to String paths
+                }
+
+                startActivity(new Intent(getApplicationContext(), PlayerActivity.class)
+                        .putStringArrayListExtra("songs", songPaths) // ✅ Corrected
                         .putExtra("songname", songName)
                         .putExtra("pos", position)
                 );
+
             }
         });
     }

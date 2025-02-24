@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-
+    //implementation("com.github.gauravk95:Audio-Visualizer-Android:1.2.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

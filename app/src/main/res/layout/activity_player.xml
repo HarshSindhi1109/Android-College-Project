@@ -105,12 +105,10 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="35dp"
-                android:background="@drawable/ic_pause"
-                android:backgroundTint="@null"
-                android:foreground="@drawable/ic_pause"
-                android:contentDescription="Pause Button">
+                android:background="@android:color/transparent"
+                android:contentDescription="Play/Pause Button"
+                android:foreground="@drawable/ic_pause"/>
 
-            </Button>
 
             <Button
                 android:id="@+id/btnnext"
